@@ -41,26 +41,59 @@
 <button class="w3-button w3-khaki w3-round-xlarge w3-padding" id="buyerButton">Hide/Show</button>
 
 <script>
+
+let myArray =
+[
+    {
+        "venue": "Zero Mile Presents",
+        "buyerInfo": "Scott Orvold, scott@zeromile.com"
+    },
+    {
+        "venue": "Murray Hill Theatre",
+        "buyerInfo": "Tom Rossmanith, tom@murrayhilltheatre.com"
+    },
+    {
+        "venue": "Little Flower Events",
+        "buyerInfo": "Jason Wall, jason@littleflowerevents.com"
+    },
+    {
+        "venue": "Georgia Theatre",
+        "buyerInfo": "Athens, GA, 965 capacity"
+    },
+    {
+        "venue": "Murray Hill Theatre",
+        "buyerInfo": "Jacksonville, FL, 600 capacity"
+    },
+    {
+        "venue": "Van Meter Hall",
+        "buyerInfo": "Bowling Green, KY, 1300 capacity"
+    },
+    {
+        "venue": "Variety Playhouse",
+        "buyerInfo": "Atlanta, GA, 1050 capacity"
+    }
+]
+
 function myFunction() {
-    document.getElementById("firstBuyer").innerHTML = "Scott Orvold, scott@zeromile.com";
+    document.getElementById("firstBuyer").textContent = myArray[0].buyerInfo;
 }
 function myFunction2() {
-    document.getElementById("secondBuyer").innerHTML = "Tom Rossmanith, tom@murrayhilltheatre.com";
+    document.getElementById("secondBuyer").textContent = myArray[1].buyerInfo;
 }
 function myFunction3() {
-    document.getElementById("thirdBuyer").innerHTML = "Jason Wall, jason@littleflowerevents.com";
+    document.getElementById("thirdBuyer").textContent = myArray[2].buyerInfo;
 }
 function myFunction4() {
-    document.getElementById("firstVenue").innerHTML = "Athens, GA, 965 capacity";
+    document.getElementById("firstVenue").textContent = myArray[3].buyerInfo;
 }
 function myFunction5() {
-    document.getElementById("secondVenue").innerHTML = "Jacksonville, FL, 600 capacity";
+    document.getElementById("secondVenue").textContent = myArray[4].buyerInfo;
 }
 function myFunction6() {
-    document.getElementById("thirdVenue").innerHTML = "Bowling Green, KY, 1300 capacity";
+    document.getElementById("thirdVenue").textContent = myArray[5].buyerInfo;
 }
 function myFunction7() {
-    document.getElementById("fourthVenue").innerHTML = "Atlanta, GA, 1050 capacity";
+    document.getElementById("fourthVenue").textContent = myArray[6].buyerInfo;
 }
 $(document).ready(function(){
   $("#buyerButton").click(function(){
